@@ -54,7 +54,9 @@
 用途：有詳細權限控管的 Block 功能，為 Entity 架構支援管理欄位、管理顯示。  
 備註：Bean 的 Title 欄位，管理顯示隱藏似乎沒有效果，個人解法就是另外在開一個 title 欄位
 [Block Class](https://www.drupal.org/project/block_class)  
-用途：可以將 block 新增自己想要的 class
+用途：可以將 block 新增自己想要的 class  
+[Floating block](https://www.drupal.org/project/floating_block)  
+用途：將區塊變成浮動在畫面上的狀態  
 
 
 ## Field
@@ -64,7 +66,10 @@
 介紹產生欄位的種類，通常為新形態的欄位  
 [Date](https://www.drupal.org/project/date)  
 用途：建立日期欄位，支援彈出日曆工具讓使用者選擇日期。  
-備註：如果需要限制日曆的日期需要自己寫 JS code 去限制。  
+備註：如果需要限制日曆的日期需要自己寫 JS code 去限制或是使用 [Date Restrictions](https://www.drupal.org/project/date_restrictions)。  
+[Date Restrictions](https://www.drupal.org/project/date_restrictions)  
+用途：搭配 [Date](https://www.drupal.org/project/date) 一起使用可以限制日期，是不用寫 JS 的方法，模組自帶其他擴充模組有更細部的設定。
+備註：此模組的設定是欄位共通的，只要是共用欄位都會遭到模組的限制
 [Email Field](https://www.drupal.org/project/email)  
 用途：此欄位類型會驗證書入的文字是否為 Email 格式。  
 [Entity reference](https://www.drupal.org/project/entityreference)  
@@ -80,22 +85,37 @@
 [Field Formatter Class](https://www.drupal.org/project/field_formatter_class)  
 用途：幫助前端工程師的好用模組～ 針對特定的Field 加上 自訂的 ClassName  
 支援 Drupal 版本：Drupal7、Drupal8  
-備註：這個模組不支援 ＤＳ的 Field ， 請務必裝此[模組](https://www.drupal.org/sandbox/a65162/2852575)，才能支援 DS 的 Field。  
-[Field Permissions](https://www.drupal.org/project/field_permissions)  
-用途：針對欄位做特定的權限控管
+備註：這個模組不支援 DS 的 Field ， 請務必裝此[模組](https://www.drupal.org/sandbox/a65162/2852575)，才能支援 DS 的 Field。  
+[Image Link Formatter](https://www.drupal.org/project/image_link_formatter)  
+用途：選擇要使用哪個欄位，可以將圖片加上連結功能  
 
 ### Widget
 [Entity Reference View Widget](https://www.drupal.org/project/entityreference_view_widget)  
 用途：為 Entity Reference 類型的 Field 提供更友善的後台使用介面。  
 支援 Drupal 版本：Drupal7  
+[Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
+用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
+
+
+### 額外功能
+[Display Suite](https://www.drupal.org/project/ds)  
+用途：將欄位的功能更加細分出來，不只是管理欄位、管理顯示也是，功能非常的強大  
+[Field Group](https://www.drupal.org/project/field_group)  
+用途：於管理欄位、管理顯示可以新增 group 欄位可以群組欄位並且顯示為 Fieldset、Tab 又或是可以用 HTML 產生 Wrapper  
+[Field Permissions](https://www.drupal.org/project/field_permissions)  
+用途：針對欄位做權限控管，可以針對至角色檢視、編輯的權限  
+[Field validation](https://www.drupal.org/project/field_validation)  
+用途：可以對欄位輸入的資料進行驗證，提供正則表達式，以及多種驗證方式  
 
 ## Views 相關模組
-將會列出與 views 相關性的模組
+將會列出與 Views 相關性的模組
 
 [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
-用途：將原生的 views exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等，並且有自動提交、支援 AJAX 等功能  
+用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等，並且有自動提交、支援 AJAX 等功能  
 [Better Jump Menus](https://www.drupal.org/project/jump_menu)
-用途：比原生 views 的 jump menu 多了層級的概念可以使用。
+用途：比原生 Views 的 Jump menu 多了層級的概念可以使用。  
+[FooTable](https://www.drupal.org/project/footable)  
+用途：為 Views 的一種格式，可以將輸出的表格於不同的螢幕大小將欄位收展起來
 
 ## 功能增強
 將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
@@ -110,13 +130,54 @@
 [Back To Top](https://www.drupal.org/project/back_to_top)  
 用途：在畫面會出現一個懸浮的按鈕，點擊之後會將畫面捲動至最上方，後台有許多樣式的設定，以及呈現的位置  
 [scroll to top](https://www.drupal.org/project/scroll_to_top)  
-用途：功能同上，設定的參數並沒有如上述的模組多
+用途：功能同上，設定的參數並沒有如上述的模組多  
+[Entity connect](https://www.drupal.org/project/entityconnect)  
+用途：允許被 Entity References 的資料直接使用此模組新增、編輯，省去很多切換頁面的時間  
+[Entity menu links](https://www.drupal.org/project/entity_menu_links)  
+用途：將核心的 menu 透過 [UUID](https://www.drupal.org/project/uuid) 的方式將 menu 轉成類似 Entity 的架構  
+備註：此模組並不會更動到任何架構，可是你可以在 Views 發現有 menu 可以使用  
+[Filter permissions](https://www.drupal.org/project/filter_perms)  
+用途：將核心的權限頁面加入篩選的功能  
+[Fast Permissions Administration](https://www.drupal.org/project/fpa)  
+用途：一樣是將核心的權限頁面加入篩選的功能只是這個模組的篩選是針對角色  
+[Flag](https://www.drupal.org/project/flag)  
+用途：可以用來特別標記 Entity  
+[Font Awesome Icons](https://www.drupal.org/project/fontawesome)  
+用途：輸入特別的 HTML 以及 class 就可以變成文字 icon  
+[Inline Entity Form Table View Mode](https://www.drupal.org/project/ief_table_view_mode)  
+用途：將 Inline Entity Form 的顯示表格可以自訂顯示方式  
+[Imagecache Token](https://www.drupal.org/project/imagecache_token)  
+用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
+
+
+## 排序類
+讓使用者自訂排序的模組
+
+[Entityqueue](https://www.drupal.org/project/entityqueue)  
+用途：與 [Nodequeue](https://www.drupal.org/project/nodequeue) 相同功能的模組，只是此模組可以對應到任何 Entity 的結構  
+[Nodequeue](https://www.drupal.org/project/nodequeue)  
+用途：針對內容類型的內容可以自行排序
 
 ## 媒體類
 關於圖片，媒體樣式類的模組
 
 [Breakpoints](https://www.drupal.org/project/breakpoints)  
 用途：可以用來管理 theme 的 medai query 可以在不同的螢幕大小，將圖片放大或縮小，節省空間
+[File Entity (fieldable files)](https://www.drupal.org/project/file_entity)  
+用途：讓上傳的檔案、圖片、影片都可以有管理欄位管理顯示、以及 File type  
+[File Field Sources](https://www.drupal.org/project/filefield_sources)  
+用途：上傳檔案時可以直接輸入 URL 、選擇已經上傳過的檔案等  
+[FileField Sources Plupload](https://www.drupal.org/project/filefield_sources_plupload)  
+用途：整合 [Plupload](https://www.drupal.org/project/plupload) 可以一次大量上傳檔案  
+[Plupload integration](https://www.drupal.org/project/plupload)  
+用途：與多數模組整合的批次上傳的模組  
+
+
+
+## 使用者相關
+[Email Registration](https://www.drupal.org/project/email_registration)  
+用途：允許使用者註冊時使用 Email 註冊，並且使用 Email 作為帳號登入  
+
 
 ## 社群相關、分享
 分享到社群的模組介紹
@@ -124,7 +185,13 @@
 [AddToAny](https://www.drupal.org/project/addtoany)  
 備註：台灣常用的 Line Wechat 他都有提供，也提供客製化 Icon 的功能目前也是用這款(大推)  
 [AddThis](https://www.drupal.org/project/addthis)  
-備註：提供了基本的一些社群分享的服務，很可惜的是沒有台灣人常用的 Line 而且在 HTTPS 的環境下會有問題
+備註：提供了基本的一些社群分享的服務，很可惜的是沒有台灣人常用的 Line 而且在 HTTPS 的環境下會有問題  
+[Facebook Comments Block](https://www.drupal.org/project/facebook_comments_block)  
+用途：讓網站下方可以出現 FB 留言的功能，可以調整顏色以及留言排序  
+備註：需要 FB APP ID  
+[Facebook Comments Social Plugin](https://www.drupal.org/project/facebook_comments)  
+用途：同上，只是沒有語言設定  
+備註：需要 FB APP ID  
 
 ## 購物車
 購物車相關的模組介紹
@@ -156,4 +223,40 @@
 [Commerce Responsive UI](https://www.drupal.org/project/commerce_responsive_ui)  
 用途：此模組改寫掉了很多購物車頁面的 template 方便開發者撰寫樣式，像是原生的 checkout review 頁面原本都是表格，就被模組改寫掉了  
 [Commerce Fancy Attributes](https://www.drupal.org/project/commerce_fancy_attributes)  
-用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼
+用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼  
+
+## 開發類
+協助開發用的模組，或是不知道該如何分類的模組我都會歸類於此
+
+### Feature 化模組
+介紹可以讓網站 Feature 化或是協助 Feature 化的工具
+
+[Feature](https://www.drupal.org/project/features)  
+用途：將網站的資料庫設定匯出打包變成模組，可以直接啟用匯出的模組網站就會有打包起來的功能  
+[Features Extra](https://www.drupal.org/project/features_extra)  
+用途：可以打包原本無法打包的 Nodequeue 以及 Block 還有日期格式  
+[Diff](https://www.drupal.org/project/diff)  
+用途：網站 Feature 化後，可以用此模組來看哪邊設定被覆寫  
+
+## SEO
+關於 SEO 的模組介紹
+
+[Google Analytics](https://www.drupal.org/project/google_analytics)  
+用途：埋入 GA 追蹤碼的模組  
+[Google Analytics Reports](https://www.drupal.org/project/google_analytics_reports)  
+用途：於網站後台直接顯示 GA 的報告  
+[Metatag](https://www.drupal.org/project/metatag)  
+用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
+
+
+
+### 其他
+其他開發類別的模組
+
+[CSS Injector](https://www.drupal.org/project/css_injector)  
+用途：直接在網站上寫 css  
+備註：伺服器上的資料夾權限需要設定才有辦法寫入  
+[Devel](https://www.drupal.org/project/devel)  
+用途：協助工程師開發時的 debug 工具，或是使用自帶的擴充模組產生假內容，也可直接執行 PHP code  
+[Entity Construction Kit (ECK)](https://www.drupal.org/project/eck)  
+用途：可以自行建立 Entity 架構的模組，並且不會產生內頁
