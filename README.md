@@ -53,6 +53,9 @@
 [Bean](https://www.drupal.org/project/bean)  
 用途：有詳細權限控管的 Block 功能，為 Entity 架構支援管理欄位、管理顯示。  
 備註：Bean 的 Title 欄位，管理顯示隱藏似乎沒有效果，個人解法就是另外在開一個 title 欄位
+[Block Class](https://www.drupal.org/project/block_class)  
+用途：可以將 block 新增自己想要的 class
+
 
 ## Field
 介紹欄位的模組，細分為三種功能層面來介紹
@@ -86,6 +89,14 @@
 用途：為 Entity Reference 類型的 Field 提供更友善的後台使用介面。  
 支援 Drupal 版本：Drupal7  
 
+## Views 相關模組
+將會列出與 views 相關性的模組
+
+[Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
+用途：將原生的 views exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等，並且有自動提交、支援 AJAX 等功能  
+[Better Jump Menus](https://www.drupal.org/project/jump_menu)
+用途：比原生 views 的 jump menu 多了層級的概念可以使用。
+
 ## 功能增強
 將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
 
@@ -96,6 +107,16 @@
 [Administration menu](https://www.drupal.org/project/admin_menu)  
 用途：老牌的模組，一樣增強 toolbar 加入擴展的功能  
 備註：安裝此模組記得要手動去將原生的 Toolbar 模組關閉，否則兩個 menu 會重疊  
+[Back To Top](https://www.drupal.org/project/back_to_top)  
+用途：在畫面會出現一個懸浮的按鈕，點擊之後會將畫面捲動至最上方，後台有許多樣式的設定，以及呈現的位置  
+[scroll to top](https://www.drupal.org/project/scroll_to_top)  
+用途：功能同上，設定的參數並沒有如上述的模組多
+
+## 媒體類
+關於圖片，媒體樣式類的模組
+
+[Breakpoints](https://www.drupal.org/project/breakpoints)  
+用途：可以用來管理 theme 的 medai query 可以在不同的螢幕大小，將圖片放大或縮小，節省空間
 
 ## 社群相關、分享
 分享到社群的模組介紹
@@ -104,3 +125,35 @@
 備註：台灣常用的 Line Wechat 他都有提供，也提供客製化 Icon 的功能目前也是用這款(大推)  
 [AddThis](https://www.drupal.org/project/addthis)  
 備註：提供了基本的一些社群分享的服務，很可惜的是沒有台灣人常用的 Line 而且在 HTTPS 的環境下會有問題
+
+## 購物車
+購物車相關的模組介紹
+
+[Drupal Commerce](https://www.drupal.org/project/commerce)  
+用途： Drupal 的購物車模組擁有基本的產品、購物車功能、結帳、顧客資訊、手續費等功能  
+[Commerce Addressbook](https://www.drupal.org/project/commerce_addressbook)  
+用途：在結帳頁填寫客戶資料時，可以讓客戶選擇之前填過的資料  
+[Commerce Addressbook Extra](https://www.drupal.org/project/commerce_addressbook_extra)  
+用途：上述模組的加強版，可以選擇顯示不同的資訊為 Addressbook 下拉選單的文字，以及是否讓使用者在註冊時就填寫資料，以及啟用與否等  
+[Commerce Cart Form Checkout Pane](https://www.drupal.org/project/commerce_cart_form_checkout_pane)  
+用途：在結帳頁面時可以將購物車顯示在頁面內，並且有 AJAX 更新購物車的工能  
+[Commerce Cart Pane](https://www.drupal.org/project/commerce_cp)  
+用途：在購物車頁可以細項的調整 component 的位置以及自帶兩個小模組可以在購物車頁面，選擇貨運方式以及輸入折扣碼  
+[Commerce Cart View Override](https://www.drupal.org/project/commerce_cart_view_override)  
+用途：可以讓我們改寫原本購物車的 view 也可以改寫路徑，原生路徑為/cart  
+[Commerce Checkout Redirect](https://www.drupal.org/project/commerce_checkout_redirect)  
+用途：一定要登入才可以購買結帳，讓匿名使用者要結帳時，跳轉至自訂的路徑  
+[Commerce Coupon](https://www.drupal.org/project/commerce_coupon)  
+用途：讓使用者可以輸入折扣碼獲得折扣的功能，因為完整兼容 [Commerce Discount](https://www.drupal.org/project/commerce_discount) 所以折扣的方式非常的彈性  
+[Commerce Currency Settings](https://www.drupal.org/project/commerce_currency_settings)  
+用途：可以自訂貨幣的顯示方式，也可以 callback 自己寫 code 顯示方式或是轉換比率，也可以藉此達到去除小數點的功能  
+[Commerce Discount](https://www.drupal.org/project/commerce_discount)  
+用途：購物的折價方式，可以達到免運費、打折、固定的折扣、貨運方式升級、買a送b等，可以滿足大部分的商業需求  
+[Commerce Discount Extra](https://www.drupal.org/project/commerce_discount_extra)  
+用途：功能同上，提供更多的折扣方式如買三送二、各個商品各自打折  
+[Commerce Extra](https://www.drupal.org/project/commerce_extra)  
+用途：購物車的功能強化，有結帳頁面提供登入功能、購物車提供按鈕增減數量、顧客資料預先填入等等  
+[Commerce Responsive UI](https://www.drupal.org/project/commerce_responsive_ui)  
+用途：此模組改寫掉了很多購物車頁面的 template 方便開發者撰寫樣式，像是原生的 checkout review 頁面原本都是表格，就被模組改寫掉了  
+[Commerce Fancy Attributes](https://www.drupal.org/project/commerce_fancy_attributes)  
+用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼
