@@ -1,5 +1,5 @@
 ## Drupal Module 整理列表
-對於新手來說學習 CMS 架站最困難的點就是：玩全不知道有哪些模組可以用，又或是模組的功用為何，與其浪費大量的時間去嘗試模組跟踩雷，不如看看以下模組清單與點評
+對於新手來說學習 CMS 架站最困難的點就是：玩全不知道有哪些模組可以用，又或是模組的功用為何，與其浪費大量的時間去嘗試模組跟踩雷，不如看看以下模組清單與點評，個人較推薦的模組將會打*號。
 
 又有鑑於突然想找模組卻忘記模組名稱，又或是有看到好用的模組卻沒記錄起來這件事情感到可惜，特別開此一篇文章來記錄模組的名稱以及功能，也藉此希望能幫助到新手選擇模組。
 
@@ -75,6 +75,8 @@
 [Entity reference](https://www.drupal.org/project/entityreference)  
 用途：使 Drupal Entity 之間的資料產生關聯。  
 支援 Drupal 版本：Drupal7  
+[Link](https://www.drupal.org/project/link)  
+用途：建立可以填入連結的欄位，並且可以選擇顯示連結的方式　　
 [Serial Field](https://www.drupal.org/project/serial)  
 用途：產生流水號的欄位。  
 [Computed Field](https://www.drupal.org/project/computed_field)  
@@ -112,10 +114,17 @@
 
 [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
 用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等，並且有自動提交、支援 AJAX 等功能  
-[Better Jump Menus](https://www.drupal.org/project/jump_menu)
+[Better Jump Menus](https://www.drupal.org/project/jump_menu)  
 用途：比原生 Views 的 Jump menu 多了層級的概念可以使用。  
 [FooTable](https://www.drupal.org/project/footable)  
-用途：為 Views 的一種格式，可以將輸出的表格於不同的螢幕大小將欄位收展起來
+用途：為 Views 的一種格式，可以將輸出的表格於不同的螢幕大小將欄位收展起來  
+[Taxonomy Views Integrator](https://www.drupal.org/project/tvi)  
+用途：可以用 views 改寫不同的分類頁，分類與子分類有繼承的概念  
+[Views Accordion](https://www.drupal.org/project/views_accordion)  
+用途：用 views 作出手風琴的效果。  
+[Views Conditional](https://www.drupal.org/project/views_conditional)  
+用途：在 views 內可以根據不同的條件顯示不同的欄位。  
+
 
 ## 功能增強
 將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
@@ -148,11 +157,48 @@
 用途：將 Inline Entity Form 的顯示表格可以自訂顯示方式  
 [Imagecache Token](https://www.drupal.org/project/imagecache_token)  
 用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
+[Masquerade](https://www.drupal.org/project/masquerade)  
+用途：使用此模組可以直接切換至他人的帳號方便檢查權限設定是否正確  
+[Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
+用途：讓使用者在 CKEditor 使用 Media 上傳圖片算是整合兩者的模組  
+[Menu Badges](https://www.drupal.org/project/menu_badges)  
+用途：類似 FB 通知的功能，可以顯示數字在連結旁，通常用於購物車以及收件夾等功能  
+[Menu Editor](https://www.drupal.org/project/menu_editor)  
+用途：一次可以編輯大量連結的方便模組。  
+[Menu HTML](https://www.drupal.org/project/menu_html)  
+用途：可以直接在 Menu 輸入 HTML  
+[Menu position](https://www.drupal.org/project/menu_position)  
+用途：在 Node 頁時將 menu 亮燈(active)的模組，可自定路徑。  
+[Menu token](https://www.drupal.org/project/menu_token)  
+用途：在建立 menu 可以使用 token  
+[Override node options](https://www.drupal.org/project/override_node_options)  
+用途：原生的 Node option 權限控管並沒有很詳細，此模組可直接改寫 Node option 的權限，例如單獨只開啟發佈選項的權限等。  
+[Page Preview](https://www.drupal.org/project/pagepreview)  
+用途：原生的預覽功能在顯示出文章上會有一點問題，此模組預覽功能較能看到正確的顯示內容  
+[Publish Content](https://www.drupal.org/project/publishcontent)  
+用途：好用的上下架模組，提供一個連結可以將內容上架、下架  
+[Responsive Menus](https://www.drupal.org/project/responsive_menus)  
+用途：於設定的寬度之下自動將選單變成 RWD menu 後台可設定多種樣式，懶人福音  
+[Smart Trim](https://www.drupal.org/project/smart_trim)  
+用途：原生的擷取字數功能較不準確，可能會截斷英文單字，此模組擷取功能較為聰明。  
+[Tab Tamer](https://www.drupal.org/project/tabtamer)  
+用途：可以隱藏 Tab  
+備註：如果記憶體不足會無法顯示出全部的  Tab  ，有時也會有無法儲存設定的 BUG  
+[Taxonomy access fix](https://www.drupal.org/project/taxonomy_access_fix)  
+用途：管理分類的權限並沒有新增的權限，此模組讓允許其他角色新增分類。  
+[Taxonomy Menu Trails](https://www.drupal.org/project/taxonomy_menu_trails)  
+用途：在分類頁時將 menu 亮燈(active)的模組，可自定路徑。  
+[view_unpublished](https://www.drupal.org/project/view_unpublished)  
+用途：其他角色可以看見未發表文章的權限，原生權限沒有效果。  
+[Workbench](https://www.drupal.org/project/workbench)  
+用途：可以製作出我的工作室的功能，類似於主控台。  
 
 
 ## 排序類
 讓使用者自訂排序的模組
 
+[DraggableViews](https://www.drupal.org/project/draggableviews)  
+用途：用 views 製作出一個可以拖曳排序的功能。  
 [Entityqueue](https://www.drupal.org/project/entityqueue)  
 用途：與 [Nodequeue](https://www.drupal.org/project/nodequeue) 相同功能的模組，只是此模組可以對應到任何 Entity 的結構  
 [Nodequeue](https://www.drupal.org/project/nodequeue)  
@@ -171,12 +217,20 @@
 用途：整合 [Plupload](https://www.drupal.org/project/plupload) 可以一次大量上傳檔案  
 [Plupload integration](https://www.drupal.org/project/plupload)  
 用途：與多數模組整合的批次上傳的模組  
-
+[Manual Crop](https://www.drupal.org/project/manualcrop)  
+用途：讓使用者可以自行裁切圖片想要的區域，對於不會做圖的使用者大力推薦  
+[Media](https://www.drupal.org/project/media)  
+用途：提供類似檔案總管的功能，讓使用者上傳圖片、檔案、影片等功能，非常強大的一個模組。  
 
 
 ## 使用者相關
 [Email Registration](https://www.drupal.org/project/email_registration)  
 用途：允許使用者註冊時使用 Email 註冊，並且使用 Email 作為帳號登入  
+[Real Name](https://www.drupal.org/project/realname)  
+用途：將使用者顯示帳號的地方都可以換成 Real Name ex: 您好，王大明  
+備註：安裝此模組之後系統會提示你要將註冊的 mail template 更改為 Real Name  
+[Password Separate Form](https://www.drupal.org/project/change_pwd_page)  
+用途：可以將重設密碼頁面獨立出來，滿足設計的需求。  
 
 
 ## 社群相關、分享
@@ -237,6 +291,9 @@
 用途：可以打包原本無法打包的 Nodequeue 以及 Block 還有日期格式  
 [Diff](https://www.drupal.org/project/diff)  
 用途：網站 Feature 化後，可以用此模組來看哪邊設定被覆寫  
+[Strongarm](https://www.drupal.org/project/strongarm)  
+用途：可以將網站內的所有 [Variable](https://www.drupal.org/project/variable) 打包起來  
+
 
 ## SEO
 關於 SEO 的模組介紹
@@ -247,7 +304,10 @@
 用途：於網站後台直接顯示 GA 的報告  
 [Metatag](https://www.drupal.org/project/metatag)  
 用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
-
+[Path Breadcrumbs](https://www.drupal.org/project/path_breadcrumbs)  
+用途：可以針對動態路徑產生麵包屑，還提供了 Microdata 以及 RDFa 的選項對於 SEO 搜尋結果有很大的幫助  
+[Pathauto](https://www.drupal.org/project/pathauto)  
+用途：自定意網址路徑的功能  
 
 
 ### 其他
@@ -259,4 +319,15 @@
 [Devel](https://www.drupal.org/project/devel)  
 用途：協助工程師開發時的 debug 工具，或是使用自帶的擴充模組產生假內容，也可直接執行 PHP code  
 [Entity Construction Kit (ECK)](https://www.drupal.org/project/eck)  
-用途：可以自行建立 Entity 架構的模組，並且不會產生內頁
+用途：可以自行建立 Entity 架構的模組，並且不會產生內頁  
+[PHPMailer](https://www.drupal.org/project/phpmailer)  
+用途：用來讓網站寄信的模組，功能簡單。  
+備註：需要安裝 Library 以及要有 SMTP Server  
+[Rename Locked Fields](https://www.drupal.org/project/rflocked)  
+用途：可以重新命名無法更改的欄位  
+[Rules](https://www.drupal.org/project/rules)  
+用途：處發事件之後執行客製的動作，功能靈活可是設定稍為複雜  
+[Variable](https://www.drupal.org/project/variable)  
+用途：提供了一個介面來管理網站的 Variable，也提供了 API 讓我們撰寫模組產生 Variable。  
+[Tracking Code](https://www.drupal.org/project/tracking_code)  
+用途：埋入追蹤碼的模組。  
