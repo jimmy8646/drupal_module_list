@@ -1,28 +1,28 @@
 ## Drupal Module 整理列表
-對於新手來說學習 CMS 架站最困難的點就是：完全不知道有哪些模組可以用，又或是模組的功用為何，與其浪費大量的時間去嘗試模組跟踩雷，不如看看以下模組清單與點評，個人較推薦的模組將會打*號。
+對於新手來說學習 CMS 架站最困難的點就是：如何挑選模組，以及模組的功用為何，連選擇模組都是一門學問，自己摸索又會浪費大量的時間在踩雷上，不如看看以下整理出來的模組清單，以下這些模組都是個人使用過所整理出來的，較為推薦的模組也將會排序在分類的上方。
 
-又有鑑於突然想找模組卻忘記模組名稱，又或是有看到好用的模組卻沒記錄起來這件事情感到可惜，特別開此一篇文章來記錄模組的名稱以及功能，也藉此希望能幫助到新手選擇模組。
+又有鑑於突然想找模組卻又忘記模組名稱，又或是有看到好用的模組卻沒記錄起來這件事情感到可惜，特別開此一篇文章來記錄模組的名稱以及功能，希望能幫助到學習 Drupal 的新手，也藉由此機會整理模組。
 
 ## 必裝模組，沒裝不能活
-建立好一個新的 Drupal 站有些模組我是必裝的，如果這些模組都沒裝會失去很多強大的功能阿
-* [Ctools](https://www.drupal.org/project/ctools) 這...應該不需要解釋了吧，沒裝網站基本上沒什麼事情可以做的
-* [Views](https://www.drupal.org/project/views) 同上，製作頁面，區塊都必用
-* [Module Filter](https://www.drupal.org/project/module_filter) 優化模組管理介面
-* [CKEditor](https://www.drupal.org/project/ckeditor) 所見即所得編輯器，連 Library 都不需要裝，現在直接掛 CDN 了
-* [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都需要這個模組
+建立好一個新的 Drupal 站有些模組是必裝的，很多強大的模組都是基於這些模組所開發出來的，這些模組也可以算是核心模組了吧，甚至有些是 Drupal8 也直接納入核心功能。
+* [Ctools](https://www.drupal.org/project/ctools) 看他的使用量就知道他是必裝的模組，他提供了很多個 API 功能讓使用者開發更方便。
+* [Views](https://www.drupal.org/project/views) 直接使用介面來對資料庫撈取資料，只要對 Views 撈資料夠熟悉就能夠解決百分之八十的問題。
+* [Module Filter](https://www.drupal.org/project/module_filter) 這個模組直接將我們的模組列表頁面改寫，將模組群組化，搜尋上更加的方便，也讓模組的資訊更加的詳細。
+* [CKEditor](https://www.drupal.org/project/ckeditor) 提供使用者在文字區塊時出現類似 Word 工具列的功能讓使用者發表文章更加方便。
+* [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都會需要這個模組的 API 所以也是必裝的。
 
 ## Slideshow
-介紹用來製作圖片輪播的模組，各有優缺點大家可以自行斟酌。
+正所謂有圖先贏一半，圖片漂亮在贏一半，只要網站有一個美美 Slideshow 看起來就是不一樣，同時也可以幫助網站 promote 內容的好幫手，在此列出了一些常用的模組，以下這幾個各有優缺大家可以自行斟酌選擇自己想要的模組來使用即可。
 
-[Views Slideshow](https://www.drupal.org/project/views_slideshow)   
-備註：搭配 views 服用效果也很簡單  
-[Flex Slider](https://www.drupal.org/project/flexslider)  
-備註：如果是 V1 版本需要另外搭配 [FlexSlider Views Slideshow](https://www.drupal.org/project/flexslider_views_slideshow) V2 之後就已經內建(我很久沒用這個模組了如果有錯也請大家包容)  
 [Slick Carousel](https://www.drupal.org/project/slick) (大推)  
-備註：目前都使用這套模組，功能強大樣式多樣，擴充性的模組也很多  
+備註：目前都使用這套，功能強大樣式多樣，擴充性的模組也很多，不管你是同時顯示三個還是五個，後台都可以進行設定。  
+[Flex Slider](https://www.drupal.org/project/flexslider)  
+備註：如果是 V1 版本需要另外搭配 [FlexSlider Views Slideshow](https://www.drupal.org/project/flexslider_views_slideshow) 使用起來與 Views Slideshow 沒什麼差別，對於行動裝置較為友善，使用手指拖曳就可以切換上下張，設定也比 Views Slideshow 多一點。  
+[Views Slideshow](https://www.drupal.org/project/views_slideshow)   
+備註：最基本款的圖片輪播功能，如果沒有特殊的需求使用這款即可。  
 [Backstretch](https://www.drupal.org/project/backstretch)  
-用途：用來製作背景式全螢幕的圖片輪播居多
-備註：使用起來彈性較小，需要搭配 context 一起使用比較好一點
+用途：用來製作背景式全螢幕輪播。  
+備註：如果你的網站首頁有全屏大圖輪播可以推薦使用這個，使用起來沒有太多可以設定的地方，只要搭配 context 一起使用就可以看到效果。  
 
 ## Layout
 介紹用來幫助排版或是版形的模組
