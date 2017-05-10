@@ -11,7 +11,7 @@
 * [CKEditor](https://www.drupal.org/project/ckeditor) 提供使用者在文字區塊時出現類似 Word 工具列的功能讓使用者發表文章更加方便。
 * [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都會需要這個模組的 API 所以也是必裝的。
 
-## Slideshow
+## 圖片輪播 (Slideshow)
 正所謂有圖先贏一半，圖片漂亮在贏一半，只要網站有一個美美 Slideshow 看起來就是不一樣，同時也可以幫助網站 promote 內容的好幫手，在此列出了一些常用的模組，以下這幾個各有優缺大家可以自行斟酌選擇自己想要的模組來使用即可。
 
 [Slick Carousel](https://www.drupal.org/project/slick) (大推)  
@@ -36,7 +36,7 @@
 用途：可以製作出切換 Tab 的效果，Tab 數量可以無限新增、支援 AJAX 效果，可以選擇預設顯示 Tab 或不顯示
 備註：一個 Tab 可以是 node block view callback 運用非常靈活，也是一個很強大的模組
 
-## Block區塊類
+## 區塊 (Block)
 Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用，壞處就是權限的控管並沒有很詳細的處理而且他不是 Entity 的架構，整個網站的組成不外乎區塊跟頁面，所以區塊相關的模組特別整理出來一塊。
 
 [Bean](https://www.drupal.org/project/bean) (大推)  
@@ -59,31 +59,35 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：將區塊位子(css position:fixed)在畫面上的狀態。  
 
 
-## Field
-介紹欄位的模組，細分為三種功能層面來介紹
+## 欄位 (Field)
+整個 Drupal 站好不好用取決於 欄位建的好不好，使用者用起來會不會覺得麻煩都是要考慮的因素，當然也有很多模組，不管是資料的形態、顯示的方式、欄位的工具等等，這些模組真的是太多了所以我將會列出我有用過的模組。
 
-### Type
-介紹產生欄位的種類，通常為新形態的欄位  
+### 欄位類型 (Field type)
+某方面來講建立欄位就是在定義資料庫的形態，所以為了滿組使用者龐大的需求，欄位的類型自然不少，介紹一些新類型的欄位。
+
+[Entity reference](https://www.drupal.org/project/entityreference)  
+用途：使 Drupal Entity 之間的資料產生關聯，簡單的來說就是資料之間的橋梁透過 Entity reference 可以從 A Type 找到 B type 只要有關聯就一定有辦法撈出資料。  
+支援 Drupal 版本：Drupal7  
+[Link](https://www.drupal.org/project/link)  
+用途：專門存放 URL 的欄位，並且可以選擇顯示的方式，不管是顯示網址、還是顯示 Title 是否開新視窗等，只要跟連結有關的設定他都有提供。  
 [Date](https://www.drupal.org/project/date)  
 用途：建立日期欄位，支援彈出日曆工具讓使用者選擇日期。  
 備註：如果需要限制日曆的日期需要自己寫 JS code 去限制或是使用 [Date Restrictions](https://www.drupal.org/project/date_restrictions)。  
 [Date Restrictions](https://www.drupal.org/project/date_restrictions)  
 用途：搭配 [Date](https://www.drupal.org/project/date) 一起使用可以限制日期，是不用寫 JS 的方法，模組自帶其他擴充模組有更細部的設定。
-備註：此模組的設定是欄位共通的，只要是共用欄位都會遭到模組的限制
+備註：此模組的設定是欄位共通的，只要是共用欄位都會遭到模組的限制。  
 [Email Field](https://www.drupal.org/project/email)  
 用途：此欄位類型會驗證書入的文字是否為 Email 格式。  
-[Entity reference](https://www.drupal.org/project/entityreference)  
-用途：使 Drupal Entity 之間的資料產生關聯。  
-支援 Drupal 版本：Drupal7  
-[Link](https://www.drupal.org/project/link)  
-用途：建立可以填入連結的欄位，並且可以選擇顯示連結的方式　　
 [Serial Field](https://www.drupal.org/project/serial)  
 用途：產生流水號的欄位。  
 [Computed Field](https://www.drupal.org/project/computed_field)  
 用途：用來計算其他欄位的值，將結果儲存於此欄位的模組。  
 備註：使用起來並不是很直觀的模組，需要寫一點點小程式於後台。  
 
-### Formatter
+### 欄位顯示 (Formatter)
+
+[Smart Trim](https://www.drupal.org/project/smart_trim)  
+用途：原生的擷取字數功能較不準確，可能會截斷英文單字，此模組擷取功能較為聰明。  
 [Field Formatter Class](https://www.drupal.org/project/field_formatter_class)  
 用途：幫助前端工程師的好用模組～ 針對特定的Field 加上 自訂的 ClassName  
 支援 Drupal 版本：Drupal7、Drupal8  
@@ -91,15 +95,18 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Image Link Formatter](https://www.drupal.org/project/image_link_formatter)  
 用途：選擇要使用哪個欄位，可以將圖片加上連結功能  
 
-### Widget
+### 欄位介面工具 (Widget)
+
+[Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
+用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
 [Entity Reference View Widget](https://www.drupal.org/project/entityreference_view_widget)  
 用途：為 Entity Reference 類型的 Field 提供更友善的後台使用介面。  
 支援 Drupal 版本：Drupal7  
-[Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
-用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
 
 
-### 額外功能
+
+### 其他
+
 [Display Suite](https://www.drupal.org/project/ds)  
 用途：將欄位的功能更加細分出來，不只是管理欄位、管理顯示也是，功能非常的強大  
 [Field Group](https://www.drupal.org/project/field_group)  
@@ -179,8 +186,6 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：好用的上下架模組，提供一個連結可以將內容上架、下架  
 [Responsive Menus](https://www.drupal.org/project/responsive_menus)  
 用途：於設定的寬度之下自動將選單變成 RWD menu 後台可設定多種樣式，懶人福音  
-[Smart Trim](https://www.drupal.org/project/smart_trim)  
-用途：原生的擷取字數功能較不準確，可能會截斷英文單字，此模組擷取功能較為聰明。  
 [Tab Tamer](https://www.drupal.org/project/tabtamer)  
 用途：可以隱藏 Tab  
 備註：如果記憶體不足會無法顯示出全部的  Tab  ，有時也會有無法儲存設定的 BUG  
