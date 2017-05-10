@@ -1,5 +1,5 @@
 ## Drupal Module 整理列表
-對於新手來說學習 CMS 架站最困難的點就是：如何挑選模組，以及模組的功用為何，連選擇模組都是一門學問，自己摸索又會浪費大量的時間在踩雷上，不如看看以下整理出來的模組清單，以下這些模組都是個人使用過所整理出來的，較為推薦的模組也將會排序在分類的上方。
+對於新手來說學習 CMS 架站最困難的點就是：如何挑選模組，以及模組的功用為何，連選擇模組都是一門學問，自己摸索又會浪費大量的時間在踩雷上，不如看看以下整理出來的模組清單，以下這些模組都是個人使用過所整理出來的，個人常使用的模組也會推薦給大家。
 
 又有鑑於突然想找模組卻又忘記模組名稱，又或是有看到好用的模組卻沒記錄起來這件事情感到可惜，特別開此一篇文章來記錄模組的名稱以及功能，希望能幫助到學習 Drupal 的新手，也藉由此機會整理模組。
 
@@ -36,27 +36,27 @@
 用途：可以製作出切換 Tab 的效果，Tab 數量可以無限新增、支援 AJAX 效果，可以選擇預設顯示 Tab 或不顯示
 備註：一個 Tab 可以是 node block view callback 運用非常靈活，也是一個很強大的模組
 
-## Block
-介紹將輸出結果為 Block 的或是 Block 相關功能的模組
+## Block區塊類
+Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用，壞處就是權限的控管並沒有很詳細的處理而且他不是 Entity 的架構，整個網站的組成不外乎區塊跟頁面，所以區塊相關的模組特別整理出來一塊。
 
+[Bean](https://www.drupal.org/project/bean) (大推)  
+用途：就像我上面敘述提到的，原生的 Block 缺乏權限的控管，以及不是 Entity 的架構，而這個模組正好解決此問題，有詳細的權限控管以及、管理欄位、管理顯示非常好用。  
+備註：Bean 的 Title 欄位，管理顯示隱藏似乎沒有效果，個人解法就是另外在開一個 title 欄位。  
+[Menu block](https://www.drupal.org/project/menu_block)  
+用途：將 menu 直接製做成 block 的好用模組，如果 menu 為多階層，可以設定層級相關的功能。  
 [Block Group](https://www.drupal.org/project/blockgroup)  
-用途：為 Drupal Block 產生一層 wrapper，有助於前端工程師撰寫樣式。  
+用途：提供將區塊群組的功能，類似於 Region 而前台會產生一層 wrapper，有助於前端工程師撰寫樣式，如果有許多個區塊需要包在一起可以考慮使用這個模組。  
 支援 Drupal 版本：Drupal7、Drupal8  
+[Taxonomy menu block](https://www.drupal.org/project/taxonomy_menu_block)  
+用途：將分類直接製作成 menu block 的模組，省去了 [Menu block](https://www.drupal.org/project/menu_block) 與 [Taxonomy menu](https://www.drupal.org/project/taxonomy_menu) 的模組整合，有時想簡單的呈現分類選單，可以使用這個模組，當然不會比前兩者組合來的彈性。  
 [MultiBlock](https://www.drupal.org/project/multiblock)  
 用途：複製網站內已存在的 Block ，使得一個頁面能出現多個一樣的 Block。  
 支援 Drupal 版本：Drupal7  
 備註：此功能已經加入Drupal8中。  
-[Menu block](https://www.drupal.org/project/menu_block)  
-用途：將 menu 製做成 block 的好用模組  
-[Taxonomy menu block](https://www.drupal.org/project/taxonomy_menu_block)  
-用途：將 taxonomy 直接製作成 menu block 的模組，像是 [Menu block](https://www.drupal.org/project/menu_block) 模組與 [Taxonomy menu](https://www.drupal.org/project/taxonomy_menu) 的綜合體  
-[Bean](https://www.drupal.org/project/bean)  
-用途：有詳細權限控管的 Block 功能，為 Entity 架構支援管理欄位、管理顯示。  
-備註：Bean 的 Title 欄位，管理顯示隱藏似乎沒有效果，個人解法就是另外在開一個 title 欄位
 [Block Class](https://www.drupal.org/project/block_class)  
-用途：可以將 block 新增自己想要的 class  
+用途：可以將 block 新增自己想要的 class，方便撰寫前台樣式。  
 [Floating block](https://www.drupal.org/project/floating_block)  
-用途：將區塊變成浮動在畫面上的狀態  
+用途：將區塊位子(css position:fixed)在畫面上的狀態。  
 
 
 ## Field
