@@ -77,7 +77,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：搭配 [Date](https://www.drupal.org/project/date) 一起使用可以限制日期，是不用寫 JS 的方法，模組自帶其他擴充模組有更細部的設定。
 備註：此模組的設定是欄位共通的，只要是共用欄位都會遭到模組的限制。  
 [Email Field](https://www.drupal.org/project/email)  
-用途：此欄位類型會驗證書入的文字是否為 Email 格式。  
+用途：此欄位類型會驗證輸入的文字是否為 Email 格式。  
 [Serial Field](https://www.drupal.org/project/serial)  
 用途：產生流水號的欄位。  
 [Computed Field](https://www.drupal.org/project/computed_field)  
@@ -85,20 +85,27 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 備註：使用起來並不是很直觀的模組，需要寫一點點小程式於後台。  
 
 ### 欄位顯示 (Formatter)
+既然我們有了資料，接著就要討論將欄位顯示出來的**樣式**，不管是加 class ，還是資料的呈現方式都有許多模組，列出幾個比較常用的模組。
 
+[Field Group](https://www.drupal.org/project/field_group) (大推)  
+用途：可用在管理欄位、管理顯示，可以新增 group 欄位將欄位群組起來，並且顯示為 Fieldset、Tab 又或是可以用 HTML 產生 Wrapper ，很多很多功能。  
+[Image Link Formatter](https://www.drupal.org/project/image_link_formatter)  
+用途：為圖片欄位的顯示方式，可以選擇要使用哪個欄位，將圖片變成有連結功能，不需要在用 views 去改寫設定，非常好用。  
 [Smart Trim](https://www.drupal.org/project/smart_trim)  
-用途：原生的擷取字數功能較不準確，可能會截斷英文單字，此模組擷取功能較為聰明。  
+用途：核心的擷取字數功能比較簡單並無太多的客製化設定，此模組擷取功能較為彈性。  
 [Field Formatter Class](https://www.drupal.org/project/field_formatter_class)  
 用途：幫助前端工程師的好用模組～ 針對特定的Field 加上 自訂的 ClassName  
 支援 Drupal 版本：Drupal7、Drupal8  
 備註：這個模組不支援 DS 的 Field ， 請務必裝此[模組](https://www.drupal.org/sandbox/a65162/2852575)，才能支援 DS 的 Field。  
-[Image Link Formatter](https://www.drupal.org/project/image_link_formatter)  
-用途：選擇要使用哪個欄位，可以將圖片加上連結功能  
+
 
 ### 欄位介面工具 (Widget)
+雖然是說核心的模組就已經可以滿足大部分的需求，可是總是會覺得差那麼一點點或是阿~這裡在多幾個功能就更好的感覺，所以列出幾個改變選取資料介面的模組。
 
 [Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
 用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
+[Entity connect](https://www.drupal.org/project/entityconnect)  
+用途：允許被 Entity References 的資料直接使用此模組新增、編輯，省去很多切換頁面的時間  
 [Entity Reference View Widget](https://www.drupal.org/project/entityreference_view_widget)  
 用途：為 Entity Reference 類型的 Field 提供更友善的後台使用介面。  
 支援 Drupal 版本：Drupal7  
@@ -109,8 +116,6 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 [Display Suite](https://www.drupal.org/project/ds)  
 用途：將欄位的功能更加細分出來，不只是管理欄位、管理顯示也是，功能非常的強大  
-[Field Group](https://www.drupal.org/project/field_group)  
-用途：於管理欄位、管理顯示可以新增 group 欄位可以群組欄位並且顯示為 Fieldset、Tab 又或是可以用 HTML 產生 Wrapper  
 [Field Permissions](https://www.drupal.org/project/field_permissions)  
 用途：針對欄位做權限控管，可以針對至角色檢視、編輯的權限  
 [Field validation](https://www.drupal.org/project/field_validation)  
@@ -147,8 +152,6 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：在畫面會出現一個懸浮的按鈕，點擊之後會將畫面捲動至最上方，後台有許多樣式的設定，以及呈現的位置  
 [scroll to top](https://www.drupal.org/project/scroll_to_top)  
 用途：功能同上，設定的參數並沒有如上述的模組多  
-[Entity connect](https://www.drupal.org/project/entityconnect)  
-用途：允許被 Entity References 的資料直接使用此模組新增、編輯，省去很多切換頁面的時間  
 [Entity menu links](https://www.drupal.org/project/entity_menu_links)  
 用途：將核心的 menu 透過 [UUID](https://www.drupal.org/project/uuid) 的方式將 menu 轉成類似 Entity 的架構  
 備註：此模組並不會更動到任何架構，可是你可以在 Views 發現有 menu 可以使用  
