@@ -224,7 +224,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 關於圖片，媒體樣式類的模組
 
 [Breakpoints](https://www.drupal.org/project/breakpoints)  
-用途：可以用來管理 theme 的 medai query 可以在不同的螢幕大小，將圖片放大或縮小，節省空間
+用途：可以用來管理 theme 的 medai query 可以在不同的螢幕大小，將圖片放大或縮小，節省空間  
 [File Entity (fieldable files)](https://www.drupal.org/project/file_entity)  
 用途：讓上傳的檔案、圖片、影片都可以有管理欄位管理顯示、以及 File type  
 [File Field Sources](https://www.drupal.org/project/filefield_sources)  
