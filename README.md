@@ -112,7 +112,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 
-### 其他
+### 功能
 
 [Display Suite](https://www.drupal.org/project/ds)  
 用途：將欄位的功能更加細分出來，不只是管理欄位、管理顯示也是，功能非常的強大  
@@ -122,87 +122,65 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以對欄位輸入的資料進行驗證，提供正則表達式，以及多種驗證方式  
 
 ## Views 相關模組
-將會列出與 Views 相關性的模組
+當我們有了資料欄位，接著就可以開始考慮資料的輸出方式，在此列出幾個 Views 相關個人覺得還不錯用  的模組。
 
 [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
-用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等，並且有自動提交、支援 AJAX 等功能  
+用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等篩選的方式，並且有自動提交、支援 AJAX 等功能。  
 [Better Jump Menus](https://www.drupal.org/project/jump_menu)  
 用途：比原生 Views 的 Jump menu 多了層級的概念可以使用。  
 [FooTable](https://www.drupal.org/project/footable)  
-用途：為 Views 的一種格式，可以將輸出的表格於不同的螢幕大小將欄位收展起來  
+用途：為 Views 的一種格式，可以將輸出的 Table 於不同的螢幕大小將欄位，並且提供收展的功能。  
 [Taxonomy Views Integrator](https://www.drupal.org/project/tvi)  
-用途：可以用 views 改寫不同的分類頁，分類與子分類有繼承的概念  
+用途：用 Views 改寫路徑 `taxonomy/trem/%` 可以使用此模組將不同的分類頁改寫，並且分類有繼承的概念。  
+備註：要開啟權限才能在分類看到設定選項。  
 [Views Accordion](https://www.drupal.org/project/views_accordion)  
-用途：用 views 作出手風琴的效果。  
+用途：用 Views 作出類似手風琴可以開合的效果。  
 [Views Conditional](https://www.drupal.org/project/views_conditional)  
-用途：在 views 內可以根據不同的條件顯示不同的欄位。  
+用途：在 Views 內可以根據不同的條件顯示不同的欄位。  
 
+## 選單 (Menu) 類模組
+當我們有了畫面有了資料之後就可以開始選擇 Menu 相關的模組將連結掛上。
 
-## 功能增強
-將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
-
-[Administration Views](https://www.drupal.org/project/admin_views)  
-用途：將原生幾個無法修改的 views 進行修改使其功能上更加好用，像是原本的"內容"加上 [VBO](https://www.drupal.org/project/views_bulk_operations) 批次處理的功能  
 [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)  
-用途：將原生上方的 toolbar 加入擴展的功能，支援 RWD 與 [Administration menu](https://www.drupal.org/project/admin_menu) 功能相同
+用途：將原生上方的 Toolbar 加入 dropdown 的功能，同時支援 RWD 與 [Administration menu](https://www.drupal.org/project/admin_menu) 功能相同。  
+[Menu Editor](https://www.drupal.org/project/menu_editor)  
+用途：一次可以編輯大量連結的方便模組。  
+[Menu position](https://www.drupal.org/project/menu_position)  
+用途：在 Node 頁時將 Menu 亮燈(active)的模組，可自定路徑。  
+[Menu HTML](https://www.drupal.org/project/menu_html)  
+用途：可以直接在 Menu 輸入 HTML。  
+[Menu token](https://www.drupal.org/project/menu_token)  
+用途：在建立 Menu 可以使用 Token。  
+[Menu Badges](https://www.drupal.org/project/menu_badges)  
+用途：類似 FB 通知的功能，可以顯示數字在連結旁，通常用於購物車以及收件夾等功能。  
 [Administration menu](https://www.drupal.org/project/admin_menu)  
-用途：老牌的模組，一樣增強 toolbar 加入擴展的功能  
-備註：安裝此模組記得要手動去將原生的 Toolbar 模組關閉，否則兩個 menu 會重疊  
-[Back To Top](https://www.drupal.org/project/back_to_top)  
-用途：在畫面會出現一個懸浮的按鈕，點擊之後會將畫面捲動至最上方，後台有許多樣式的設定，以及呈現的位置  
-[scroll to top](https://www.drupal.org/project/scroll_to_top)  
-用途：功能同上，設定的參數並沒有如上述的模組多  
-[Entity menu links](https://www.drupal.org/project/entity_menu_links)  
-用途：將核心的 menu 透過 [UUID](https://www.drupal.org/project/uuid) 的方式將 menu 轉成類似 Entity 的架構  
-備註：此模組並不會更動到任何架構，可是你可以在 Views 發現有 menu 可以使用  
+用途：老牌的模組，一樣增強 Toolbar 加入 dropdown 的功能  
+備註：安裝此模組記得要手動去將原生的 Toolbar 模組關閉，否則兩個 Menu 會重疊。  
+[Responsive Menus](https://www.drupal.org/project/responsive_menus)  
+用途：於設定的寬度之下自動將選單變成 RWD menu 後台可設定多種樣式，懶人福音  
+[Taxonomy Menu Trails](https://www.drupal.org/project/taxonomy_menu_trails)  
+用途：在分類頁時將 menu 亮燈(active)的模組，可自定路徑。  
+
+## 權限 (Permission) 類模組
+將會列出一些權限的模組
+
 [Filter permissions](https://www.drupal.org/project/filter_perms)  
 用途：將核心的權限頁面加入篩選的功能  
 [Fast Permissions Administration](https://www.drupal.org/project/fpa)  
 用途：一樣是將核心的權限頁面加入篩選的功能只是這個模組的篩選是針對角色  
-[Flag](https://www.drupal.org/project/flag)  
-用途：可以用來特別標記 Entity  
-[Font Awesome Icons](https://www.drupal.org/project/fontawesome)  
-用途：輸入特別的 HTML 以及 class 就可以變成文字 icon  
-[Inline Entity Form Table View Mode](https://www.drupal.org/project/ief_table_view_mode)  
-用途：將 Inline Entity Form 的顯示表格可以自訂顯示方式  
-[Imagecache Token](https://www.drupal.org/project/imagecache_token)  
-用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
 [Masquerade](https://www.drupal.org/project/masquerade)  
 用途：使用此模組可以直接切換至他人的帳號方便檢查權限設定是否正確  
-[Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
-用途：讓使用者在 CKEditor 使用 Media 上傳圖片算是整合兩者的模組  
-[Menu Badges](https://www.drupal.org/project/menu_badges)  
-用途：類似 FB 通知的功能，可以顯示數字在連結旁，通常用於購物車以及收件夾等功能  
-[Menu Editor](https://www.drupal.org/project/menu_editor)  
-用途：一次可以編輯大量連結的方便模組。  
-[Menu HTML](https://www.drupal.org/project/menu_html)  
-用途：可以直接在 Menu 輸入 HTML  
-[Menu position](https://www.drupal.org/project/menu_position)  
-用途：在 Node 頁時將 menu 亮燈(active)的模組，可自定路徑。  
-[Menu token](https://www.drupal.org/project/menu_token)  
-用途：在建立 menu 可以使用 token  
 [Override node options](https://www.drupal.org/project/override_node_options)  
 用途：原生的 Node option 權限控管並沒有很詳細，此模組可直接改寫 Node option 的權限，例如單獨只開啟發佈選項的權限等。  
-[Page Preview](https://www.drupal.org/project/pagepreview)  
-用途：原生的預覽功能在顯示出文章上會有一點問題，此模組預覽功能較能看到正確的顯示內容  
-[Publish Content](https://www.drupal.org/project/publishcontent)  
-用途：好用的上下架模組，提供一個連結可以將內容上架、下架  
-[Responsive Menus](https://www.drupal.org/project/responsive_menus)  
-用途：於設定的寬度之下自動將選單變成 RWD menu 後台可設定多種樣式，懶人福音  
-[Tab Tamer](https://www.drupal.org/project/tabtamer)  
-用途：可以隱藏 Tab  
-備註：如果記憶體不足會無法顯示出全部的  Tab  ，有時也會有無法儲存設定的 BUG  
 [Taxonomy access fix](https://www.drupal.org/project/taxonomy_access_fix)  
 用途：管理分類的權限並沒有新增的權限，此模組讓允許其他角色新增分類。  
-[Taxonomy Menu Trails](https://www.drupal.org/project/taxonomy_menu_trails)  
-用途：在分類頁時將 menu 亮燈(active)的模組，可自定路徑。  
+[Publish Content](https://www.drupal.org/project/publishcontent)  
+用途：好用的上下架模組，提供一個連結可以將內容上架、下架  
 [view_unpublished](https://www.drupal.org/project/view_unpublished)  
 用途：其他角色可以看見未發表文章的權限，原生權限沒有效果。  
-[Workbench](https://www.drupal.org/project/workbench)  
-用途：可以製作出我的工作室的功能，類似於主控台。  
 
 
-## 排序類
+## 排序 (Sort) 類
 讓使用者自訂排序的模組
 
 [DraggableViews](https://www.drupal.org/project/draggableviews)  
@@ -212,7 +190,37 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Nodequeue](https://www.drupal.org/project/nodequeue)  
 用途：針對內容類型的內容可以自行排序
 
-## 媒體類
+## 功能增強
+將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
+
+[Administration Views](https://www.drupal.org/project/admin_views)  
+用途：將原生幾個無法修改的 views 進行修改使其功能上更加好用，像是原本的"內容"加上 [VBO](https://www.drupal.org/project/views_bulk_operations) 批次處理的功能  
+[Back To Top](https://www.drupal.org/project/back_to_top)  
+用途：在畫面會出現一個懸浮的按鈕，點擊之後會將畫面捲動至最上方，後台有許多樣式的設定，以及呈現的位置  
+[scroll to top](https://www.drupal.org/project/scroll_to_top)  
+用途：功能同上，設定的參數並沒有如上述的模組多  
+[Entity menu links](https://www.drupal.org/project/entity_menu_links)  
+用途：將核心的 menu 透過 [UUID](https://www.drupal.org/project/uuid) 的方式將 menu 轉成類似 Entity 的架構  
+備註：此模組並不會更動到任何架構，可是你可以在 Views 發現有 Menu 可以撈出來使用  
+[Flag](https://www.drupal.org/project/flag)  
+用途：可以用來特別標記 Entity  
+[Font Awesome Icons](https://www.drupal.org/project/fontawesome)  
+用途：輸入特別的 HTML 以及 class 就可以變成文字 icon  
+[Inline Entity Form Table View Mode](https://www.drupal.org/project/ief_table_view_mode)  
+用途：將 Inline Entity Form 的顯示表格可以自訂顯示方式  
+[Imagecache Token](https://www.drupal.org/project/imagecache_token)  
+用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
+[Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
+用途：讓使用者在 CKEditor 使用 Media 上傳圖片算是整合兩者的模組  
+[Page Preview](https://www.drupal.org/project/pagepreview)  
+用途：原生的預覽功能在顯示出文章上會有一點問題，此模組預覽功能較能看到正確的顯示內容  
+[Tab Tamer](https://www.drupal.org/project/tabtamer)  
+用途：可以隱藏 Tab  
+備註：如果記憶體不足會無法顯示出全部的  Tab  ，有時也會有無法儲存設定的 BUG  
+[Workbench](https://www.drupal.org/project/workbench)  
+用途：可以製作出我的工作室的功能，類似於主控台。  
+
+## 媒體 (Media) 類
 關於圖片，媒體樣式類的模組
 
 [Breakpoints](https://www.drupal.org/project/breakpoints)  
@@ -231,7 +239,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：提供類似檔案總管的功能，讓使用者上傳圖片、檔案、影片等功能，非常強大的一個模組。  
 
 
-## 使用者相關
+## 使用者 (User) 相關
 [Email Registration](https://www.drupal.org/project/email_registration)  
 用途：允許使用者註冊時使用 Email 註冊，並且使用 Email 作為帳號登入  
 [Real Name](https://www.drupal.org/project/realname)  
