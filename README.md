@@ -10,7 +10,7 @@
 * [欄位 (Field)](#field)
 * [Views 相關模組](#views)
 * [圖片輪播 (Slideshow)](#slideshow)
-* [排序 (Sort)](sort)
+* [排序 (Sort)](#sort)
 * [Layout 相關](#layout)
 * [選單 (Menu) 類模組](#menu)
 * [權限 (Permission) 類模組](#permission)
