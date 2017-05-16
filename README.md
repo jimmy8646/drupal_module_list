@@ -7,9 +7,21 @@
 
 * [個人必裝的模組](#base)
 * [區塊 (Block)](#block)
-* [欄位 (Field)]()
+* [欄位 (Field)](#field)
+* [Views 相關模組](#views)
+* [圖片輪播 (Slideshow)](#slideshow)
+* [排序 (Sort)](sort)
+* [Layout 相關](#layout)
+* [選單 (Menu) 類模組](#menu)
+* [權限 (Permission) 類模組](#permission)
+* [功能增強](#power)
+* [媒體 (Media) 類](#media)
+* [使用者 (User) 相關](#user)
+* [社群相關、分享](#social)
+* [購物車](#commerce)
+* [開發類](#dev)
 
-## 個人必裝的模組 ## {#base}
+<h2 id="base">個人必裝的模組</h2>
 建立好一個新的 Drupal 站有些模組是必裝的，很多強大的模組都是基於這些模組所開發出來的，這些模組也可以算是核心模組了吧，甚至有些是 Drupal8 也直接納入核心功能。
 
 * [Ctools](https://www.drupal.org/project/ctools) 看他的使用量就知道他是必裝的模組，他提供了很多個 API 功能讓使用者開發更方便。
@@ -19,7 +31,7 @@
 * [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都會需要這個模組的 API 所以也是必裝的。
 
 
-## 區塊 (Block) ## {#block}
+<h2 id="blcok">區塊 (Block)</h2>
 Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用，壞處就是權限的控管並沒有很詳細的處理而且他不是 Entity 的架構，整個網站的組成不外乎區塊跟頁面，所以區塊相關的模組特別整理出來一塊。
 
 [Bean](https://www.drupal.org/project/bean) (大推)  
@@ -42,7 +54,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：將區塊位子(css position:fixed)在畫面上的狀態。  
 
 
-## 欄位 (Field)
+<h2 id="field">欄位 (Field)</h2>
 整個 Drupal 站好不好用取決於 欄位建的好不好，使用者用起來會不會覺得麻煩都是要考慮的因素，當然也有很多模組，不管是資料的形態、顯示的方式、欄位的工具等等，這些模組真的是太多了所以我將會列出我有用過的模組。
 
 ### 欄位類型 (Field type)
@@ -104,7 +116,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Field validation](https://www.drupal.org/project/field_validation)  
 用途：可以對欄位輸入的資料進行驗證，提供正則表達式，以及多種驗證方式  
 
-## Views 相關模組
+
+<h2 id="views">Views 相關模組</h2>
 當我們有了資料欄位，接著就可以開始考慮資料的輸出方式，在此列出幾個 Views 個人覺得還不錯的相關模組。
 
 [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
@@ -121,7 +134,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Views Conditional](https://www.drupal.org/project/views_conditional)  
 用途：在 Views 內可以根據不同的條件顯示不同的欄位。  
 
-## 圖片輪播 (Slideshow)
+
+<h2 id="slideshow">圖片輪播 (Slideshow)</h2>
 正所謂有圖先贏一半，圖片漂亮在贏一半，只要網站有一個美美 Slideshow 看起來就是不一樣，同時也可以幫助網站 promote 內容的好幫手，在此列出了一些常用的模組，以下這幾個各有優缺大家可以自行斟酌選擇自己想要的模組來使用即可。
 
 [Slick Carousel](https://www.drupal.org/project/slick) (大推)  
@@ -134,7 +148,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：用來製作背景式全螢幕輪播。  
 備註：如果你的網站首頁有全屏大圖輪播可以推薦使用這個，使用起來沒有太多可以設定的地方，只要搭配 context 一起使用就可以看到效果。  
 
-## 排序 (Sort) 類
+<h2 id="sort">排序 (Sort)</h2>
 介紹可以讓使用者單獨拉出想要的資料並且自定排序的模組。
 
 [DraggableViews](https://www.drupal.org/project/draggableviews)  
@@ -147,7 +161,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Flag](https://www.drupal.org/project/flag)  
 用途：可以用來特別標記 Entity  
 
-## Layout 相關
+<h2 id="layout">Layout 相關</h2>
 原生的區塊功能如果要拿來排版其實只能針對路徑來做判斷，條件稍為簡單了一點，所以介紹幾個幫助排版或是切版形的模組，用了這些模組之後排版就可以更加的彈性。
 
 [Context](https://www.drupal.org/project/context)  
@@ -159,7 +173,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以製作出切換 Tab 的效果，Tab 數量可以無限新增、支援 AJAX 效果，可以選擇預設顯示 Tab 或不顯示
 備註：一個 Tab 可以是 node block view callback 運用非常靈活，也是一個很強大的模組  
 
-## 選單 (Menu) 類模組
+<h2 id="menu">選單 (Menu) 類模組</h2>
 當我們有了畫面有了資料之後就可以開始選擇 Menu 相關的模組將連結掛上。
 
 [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)  
@@ -182,7 +196,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Taxonomy Menu Trails](https://www.drupal.org/project/taxonomy_menu_trails)  
 用途：在分類頁時將 menu 亮燈(active)的模組，可自定路徑。  
 
-## 權限 (Permission) 類模組
+
+<h2 id="permission">權限 (Permission) 類模組</h2>
 將會列出一些權限的模組
 
 [Filter permissions](https://www.drupal.org/project/filter_perms)  
@@ -203,7 +218,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以隱藏許多系統內建的 Tab。  
 備註：如果記憶體不足會無法顯示出全部的 Tab ，有時也會有無法儲存設定的 BUG。  
 
-## 功能增強
+
+<h2 id="power">功能增強</h2>
 將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等。
 
 [Administration Views](https://www.drupal.org/project/admin_views)  
@@ -224,7 +240,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Workbench](https://www.drupal.org/project/workbench)  
 用途：可以製作出我的工作室的功能，類似於主控台。  
 
-## 媒體 (Media) 類
+
+<h2 id="media">媒體 (Media) 類</h2>
 關於圖片，媒體樣式類的模組
 
 [Media](https://www.drupal.org/project/media)  
@@ -241,7 +258,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：與多數模組整合的批次上傳的模組  
 
 
-## 使用者 (User) 相關
+<h2 id="user">使用者 (User) 相關</h2>
 使用者相關的模組，不管是註冊相關還是使用者功能的模組都會列在此分類。
 
 [profile2](https://www.drupal.org/project/profile2)  
@@ -255,7 +272,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以將重設密碼頁面獨立出來，滿足設計的需求。  
 
 
-## 社群相關、分享
+<h2 id="social">社群相關、分享</h2>
 分享到社群的模組介紹
 
 [AddToAny](https://www.drupal.org/project/addtoany)  
@@ -269,7 +286,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：同上，只是沒有語言設定  
 備註：需要 FB APP ID  
 
-## 購物車
+
+<h2 id="commerce">購物車</h2>
 購物車相關的模組介紹
 
 [Drupal Commerce](https://www.drupal.org/project/commerce)  
@@ -301,7 +319,8 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Commerce Fancy Attributes](https://www.drupal.org/project/commerce_fancy_attributes)  
 用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼  
 
-## 開發類
+
+<h2 id="dev">開發類</h2>
 協助開發用的模組，或是不知道該如何分類的模組我都會歸類於此
 
 ### Feature 化模組
