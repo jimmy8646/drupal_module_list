@@ -3,40 +3,23 @@
 
 又有鑑於突然想找模組卻又忘記模組名稱，又或是有看到好用的模組卻沒記錄起來這件事情感到可惜，特別開此一篇文章來記錄模組的名稱以及功能，希望能幫助到學習 Drupal 的新手，也藉由此機會整理模組。
 
-## 必裝模組，沒裝不能活
+本文的介紹方式將會以 基本模組-區塊-資料架構-資料呈現-排版-權限-功能增強 這樣的大方向來進行模組分類，也可以點下方的索引找到你想看的類型。
+
+* [個人必裝的模組](#base)
+* [區塊 (Block)](#block)
+* [欄位 (Field)]()
+
+## 個人必裝的模組 ## {#base}
 建立好一個新的 Drupal 站有些模組是必裝的，很多強大的模組都是基於這些模組所開發出來的，這些模組也可以算是核心模組了吧，甚至有些是 Drupal8 也直接納入核心功能。
+
 * [Ctools](https://www.drupal.org/project/ctools) 看他的使用量就知道他是必裝的模組，他提供了很多個 API 功能讓使用者開發更方便。
 * [Views](https://www.drupal.org/project/views) 直接使用介面來對資料庫撈取資料，只要對 Views 撈資料夠熟悉就能夠解決百分之八十的問題。
 * [Module Filter](https://www.drupal.org/project/module_filter) 這個模組直接將我們的模組列表頁面改寫，將模組群組化，搜尋上更加的方便，也讓模組的資訊更加的詳細。
 * [CKEditor](https://www.drupal.org/project/ckeditor) 提供使用者在文字區塊時出現類似 Word 工具列的功能讓使用者發表文章更加方便。
 * [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都會需要這個模組的 API 所以也是必裝的。
 
-## 圖片輪播 (Slideshow)
-正所謂有圖先贏一半，圖片漂亮在贏一半，只要網站有一個美美 Slideshow 看起來就是不一樣，同時也可以幫助網站 promote 內容的好幫手，在此列出了一些常用的模組，以下這幾個各有優缺大家可以自行斟酌選擇自己想要的模組來使用即可。
 
-[Slick Carousel](https://www.drupal.org/project/slick) (大推)  
-備註：目前都使用這套，功能強大樣式多樣，擴充性的模組也很多，不管你是同時顯示三個還是五個，後台都可以進行設定。  
-[Flex Slider](https://www.drupal.org/project/flexslider)  
-備註：如果是 V1 版本需要另外搭配 [FlexSlider Views Slideshow](https://www.drupal.org/project/flexslider_views_slideshow) 使用起來與 Views Slideshow 沒什麼差別，對於行動裝置較為友善，使用手指拖曳就可以切換上下張，設定也比 Views Slideshow 多一點。  
-[Views Slideshow](https://www.drupal.org/project/views_slideshow)   
-備註：最基本款的圖片輪播功能，如果沒有特殊的需求使用這款即可。  
-[Backstretch](https://www.drupal.org/project/backstretch)  
-用途：用來製作背景式全螢幕輪播。  
-備註：如果你的網站首頁有全屏大圖輪播可以推薦使用這個，使用起來沒有太多可以設定的地方，只要搭配 context 一起使用就可以看到效果。  
-
-## Layout
-介紹用來幫助排版或是版形的模組
-
-[Context](https://www.drupal.org/project/context)  
-用途：比起核心的區塊功能更佳的彈性以及強大與大多數的模組整合的非常好  
-[Panels](https://www.drupal.org/project/panels)  
-用途：可以將內容切成自己想要的 Region 有單欄、兩欄、三欄多種選擇  
-備註：搭配 Page Manager 一起服用效果更佳。  
-[Quick Tabs](https://www.drupal.org/project/quicktabs)  
-用途：可以製作出切換 Tab 的效果，Tab 數量可以無限新增、支援 AJAX 效果，可以選擇預設顯示 Tab 或不顯示
-備註：一個 Tab 可以是 node block view callback 運用非常靈活，也是一個很強大的模組
-
-## 區塊 (Block)
+## 區塊 (Block) ## {#block}
 Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用，壞處就是權限的控管並沒有很詳細的處理而且他不是 Entity 的架構，整個網站的組成不外乎區塊跟頁面，所以區塊相關的模組特別整理出來一塊。
 
 [Bean](https://www.drupal.org/project/bean) (大推)  
@@ -100,7 +83,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 ### 欄位介面工具 (Widget)
-雖然是說核心的模組就已經可以滿足大部分的需求，可是總是會覺得差那麼一點點或是阿~這裡在多幾個功能就更好的感覺，所以列出幾個改變選取資料介面的模組。
+雖然是說核心的模組就已經可以滿足大部分的需求，可是總是會覺得差那麼一點點，或是阿~這裡在多幾個功能就更好的感覺，所以列出幾個改變選取資料介面的模組。
 
 [Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
 用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
@@ -111,18 +94,18 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 支援 Drupal 版本：Drupal7  
 
 
-
 ### 功能
+剩下功能層面的模組歸類在這裡。
 
 [Display Suite](https://www.drupal.org/project/ds)  
-用途：將欄位的功能更加細分出來，不只是管理欄位、管理顯示也是，功能非常的強大  
+用途：將欄位的功能更加細分出來，不只管理欄位、管理顯示也可使用，功能非常強大，可以自行新增 code 欄位，也可以新增 view mode 非常好用的模組。  
 [Field Permissions](https://www.drupal.org/project/field_permissions)  
 用途：針對欄位做權限控管，可以針對至角色檢視、編輯的權限  
 [Field validation](https://www.drupal.org/project/field_validation)  
 用途：可以對欄位輸入的資料進行驗證，提供正則表達式，以及多種驗證方式  
 
 ## Views 相關模組
-當我們有了資料欄位，接著就可以開始考慮資料的輸出方式，在此列出幾個 Views 相關個人覺得還不錯用  的模組。
+當我們有了資料欄位，接著就可以開始考慮資料的輸出方式，在此列出幾個 Views 個人覺得還不錯的相關模組。
 
 [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
 用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等篩選的方式，並且有自動提交、支援 AJAX 等功能。  
@@ -137,6 +120,44 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：用 Views 作出類似手風琴可以開合的效果。  
 [Views Conditional](https://www.drupal.org/project/views_conditional)  
 用途：在 Views 內可以根據不同的條件顯示不同的欄位。  
+
+## 圖片輪播 (Slideshow)
+正所謂有圖先贏一半，圖片漂亮在贏一半，只要網站有一個美美 Slideshow 看起來就是不一樣，同時也可以幫助網站 promote 內容的好幫手，在此列出了一些常用的模組，以下這幾個各有優缺大家可以自行斟酌選擇自己想要的模組來使用即可。
+
+[Slick Carousel](https://www.drupal.org/project/slick) (大推)  
+備註：目前都使用這套，功能強大樣式多樣，擴充性的模組也很多，不管你是同時顯示三個還是五個，後台都可以進行設定。  
+[Flex Slider](https://www.drupal.org/project/flexslider)  
+備註：如果是 V1 版本需要另外搭配 [FlexSlider Views Slideshow](https://www.drupal.org/project/flexslider_views_slideshow) 使用起來與 Views Slideshow 沒什麼差別，對於行動裝置較為友善，使用手指拖曳就可以切換上下張，設定也比 Views Slideshow 多一點。  
+[Views Slideshow](https://www.drupal.org/project/views_slideshow)   
+備註：最基本款的圖片輪播功能，如果沒有特殊的需求使用這款即可。  
+[Backstretch](https://www.drupal.org/project/backstretch)  
+用途：用來製作背景式全螢幕輪播。  
+備註：如果你的網站首頁有全屏大圖輪播可以推薦使用這個，使用起來沒有太多可以設定的地方，只要搭配 context 一起使用就可以看到效果。  
+
+## 排序 (Sort) 類
+介紹可以讓使用者單獨拉出想要的資料並且自定排序的模組。
+
+[DraggableViews](https://www.drupal.org/project/draggableviews)  
+用途：用 views 製作出一個可以拖曳排序的功能。  
+備註：建議新增一個數字欄位讓模組進行排序，在以此欄位當做排序的依據。  
+[Entityqueue](https://www.drupal.org/project/entityqueue)  
+用途：與 [Nodequeue](https://www.drupal.org/project/nodequeue) 相同功能的模組，只是此模組可以對應到任何 Entity 的結構  
+[Nodequeue](https://www.drupal.org/project/nodequeue)  
+用途：針對內容類型的內容可以自行排序  
+[Flag](https://www.drupal.org/project/flag)  
+用途：可以用來特別標記 Entity  
+
+## Layout 相關
+原生的區塊功能如果要拿來排版其實只能針對路徑來做判斷，條件稍為簡單了一點，所以介紹幾個幫助排版或是切版形的模組，用了這些模組之後排版就可以更加的彈性。
+
+[Context](https://www.drupal.org/project/context)  
+用途：比起核心的區塊功能更佳的彈性以及強大與大多數的模組整合的非常好  
+[Panels](https://www.drupal.org/project/panels)  
+用途：可以將內容切成自己想要的 Region 有單欄、兩欄、三欄多種選擇  
+備註：搭配 Page Manager 一起服用效果更佳。  
+[Quick Tabs](https://www.drupal.org/project/quicktabs)  
+用途：可以製作出切換 Tab 的效果，Tab 數量可以無限新增、支援 AJAX 效果，可以選擇預設顯示 Tab 或不顯示
+備註：一個 Tab 可以是 node block view callback 運用非常靈活，也是一個很強大的模組  
 
 ## 選單 (Menu) 類模組
 當我們有了畫面有了資料之後就可以開始選擇 Menu 相關的模組將連結掛上。
@@ -178,20 +199,12 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：好用的上下架模組，提供一個連結可以將內容上架、下架  
 [view_unpublished](https://www.drupal.org/project/view_unpublished)  
 用途：其他角色可以看見未發表文章的權限，原生權限沒有效果。  
-
-
-## 排序 (Sort) 類
-讓使用者自訂排序的模組
-
-[DraggableViews](https://www.drupal.org/project/draggableviews)  
-用途：用 views 製作出一個可以拖曳排序的功能。  
-[Entityqueue](https://www.drupal.org/project/entityqueue)  
-用途：與 [Nodequeue](https://www.drupal.org/project/nodequeue) 相同功能的模組，只是此模組可以對應到任何 Entity 的結構  
-[Nodequeue](https://www.drupal.org/project/nodequeue)  
-用途：針對內容類型的內容可以自行排序
+[Tab Tamer](https://www.drupal.org/project/tabtamer)  
+用途：可以隱藏許多系統內建的 Tab。  
+備註：如果記憶體不足會無法顯示出全部的 Tab ，有時也會有無法儲存設定的 BUG。  
 
 ## 功能增強
-將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等
+將原有的功能增強優化的模組都會在此介紹，可能是使用者體驗、使用者更加便利等。
 
 [Administration Views](https://www.drupal.org/project/admin_views)  
 用途：將原生幾個無法修改的 views 進行修改使其功能上更加好用，像是原本的"內容"加上 [VBO](https://www.drupal.org/project/views_bulk_operations) 批次處理的功能  
@@ -202,49 +215,42 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 [Entity menu links](https://www.drupal.org/project/entity_menu_links)  
 用途：將核心的 menu 透過 [UUID](https://www.drupal.org/project/uuid) 的方式將 menu 轉成類似 Entity 的架構  
 備註：此模組並不會更動到任何架構，可是你可以在 Views 發現有 Menu 可以撈出來使用  
-[Flag](https://www.drupal.org/project/flag)  
-用途：可以用來特別標記 Entity  
 [Font Awesome Icons](https://www.drupal.org/project/fontawesome)  
 用途：輸入特別的 HTML 以及 class 就可以變成文字 icon  
 [Inline Entity Form Table View Mode](https://www.drupal.org/project/ief_table_view_mode)  
 用途：將 Inline Entity Form 的顯示表格可以自訂顯示方式  
-[Imagecache Token](https://www.drupal.org/project/imagecache_token)  
-用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
-[Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
-用途：讓使用者在 CKEditor 使用 Media 上傳圖片算是整合兩者的模組  
 [Page Preview](https://www.drupal.org/project/pagepreview)  
 用途：原生的預覽功能在顯示出文章上會有一點問題，此模組預覽功能較能看到正確的顯示內容  
-[Tab Tamer](https://www.drupal.org/project/tabtamer)  
-用途：可以隱藏 Tab  
-備註：如果記憶體不足會無法顯示出全部的  Tab  ，有時也會有無法儲存設定的 BUG  
 [Workbench](https://www.drupal.org/project/workbench)  
 用途：可以製作出我的工作室的功能，類似於主控台。  
 
 ## 媒體 (Media) 類
 關於圖片，媒體樣式類的模組
 
-[Breakpoints](https://www.drupal.org/project/breakpoints)  
-用途：可以用來管理 theme 的 medai query 可以在不同的螢幕大小，將圖片放大或縮小，節省空間  
-[File Entity (fieldable files)](https://www.drupal.org/project/file_entity)  
-用途：讓上傳的檔案、圖片、影片都可以有管理欄位管理顯示、以及 File type  
+[Media](https://www.drupal.org/project/media)  
+用途：提供類似檔案總管的功能，讓使用者上傳圖片、檔案、影片等功能，非常強大的一個模組。  
+[Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
+用途：讓使用者在 CKEditor 使用 Media 上傳圖片算是整合兩者的模組  
+[Manual Crop](https://www.drupal.org/project/manualcrop)  
+用途：讓使用者可以自行裁切圖片想要的區域，對於不會做圖的使用者大力推薦  
 [File Field Sources](https://www.drupal.org/project/filefield_sources)  
 用途：上傳檔案時可以直接輸入 URL 、選擇已經上傳過的檔案等  
 [FileField Sources Plupload](https://www.drupal.org/project/filefield_sources_plupload)  
 用途：整合 [Plupload](https://www.drupal.org/project/plupload) 可以一次大量上傳檔案  
 [Plupload integration](https://www.drupal.org/project/plupload)  
 用途：與多數模組整合的批次上傳的模組  
-[Manual Crop](https://www.drupal.org/project/manualcrop)  
-用途：讓使用者可以自行裁切圖片想要的區域，對於不會做圖的使用者大力推薦  
-[Media](https://www.drupal.org/project/media)  
-用途：提供類似檔案總管的功能，讓使用者上傳圖片、檔案、影片等功能，非常強大的一個模組。  
 
 
 ## 使用者 (User) 相關
-[Email Registration](https://www.drupal.org/project/email_registration)  
-用途：允許使用者註冊時使用 Email 註冊，並且使用 Email 作為帳號登入  
+使用者相關的模組，不管是註冊相關還是使用者功能的模組都會列在此分類。
+
+[profile2](https://www.drupal.org/project/profile2)  
+用途：可以新增與使用者相關連的資料類型，例如履歷表個人檔案。  
 [Real Name](https://www.drupal.org/project/realname)  
 用途：將使用者顯示帳號的地方都可以換成 Real Name ex: 您好，王大明  
 備註：安裝此模組之後系統會提示你要將註冊的 mail template 更改為 Real Name  
+[Email Registration](https://www.drupal.org/project/email_registration)  
+用途：允許使用者註冊時使用 Email 註冊，並且使用 Email 作為帳號登入  
 [Password Separate Form](https://www.drupal.org/project/change_pwd_page)  
 用途：可以將重設密碼頁面獨立出來，滿足設計的需求。  
 
@@ -311,17 +317,19 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以將網站內的所有 [Variable](https://www.drupal.org/project/variable) 打包起來  
 
 
-## SEO
+### SEO
 關於 SEO 的模組介紹
 
+[Metatag](https://www.drupal.org/project/metatag)  
+用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
+[Imagecache Token](https://www.drupal.org/project/imagecache_token)  
+用途：可以在 Token 當中抓取到圖片樣式大小的圖片，安裝  [Metatag](https://www.drupal.org/project/metatag) 時系統會建議你裝此模組  
+[Path Breadcrumbs](https://www.drupal.org/project/path_breadcrumbs)  
+用途：可以針對動態路徑產生麵包屑，還提供了 Microdata 以及 RDFa 的選項對於 SEO 搜尋結果有很大的幫助  
 [Google Analytics](https://www.drupal.org/project/google_analytics)  
 用途：埋入 GA 追蹤碼的模組  
 [Google Analytics Reports](https://www.drupal.org/project/google_analytics_reports)  
 用途：於網站後台直接顯示 GA 的報告  
-[Metatag](https://www.drupal.org/project/metatag)  
-用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
-[Path Breadcrumbs](https://www.drupal.org/project/path_breadcrumbs)  
-用途：可以針對動態路徑產生麵包屑，還提供了 Microdata 以及 RDFa 的選項對於 SEO 搜尋結果有很大的幫助  
 [Pathauto](https://www.drupal.org/project/pathauto)  
 用途：自定意網址路徑的功能  
 
