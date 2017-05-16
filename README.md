@@ -31,7 +31,7 @@
 * [Libraries](https://www.drupal.org/project/libraries) 有需要 Library 的模組都會需要這個模組的 API 所以也是必裝的。
 
 
-<h2 id="blcok">區塊 (Block)</h2>
+<h2 id="block">區塊 (Block)</h2>
 Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用，壞處就是權限的控管並沒有很詳細的處理而且他不是 Entity 的架構，整個網站的組成不外乎區塊跟頁面，所以區塊相關的模組特別整理出來一塊。
 
 [Bean](https://www.drupal.org/project/bean) (大推)  
