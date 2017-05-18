@@ -89,6 +89,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="base">個人必裝的模組</h2>
+
 * [Ctools](https://www.drupal.org/project/ctools) 看他的使用量就知道他是必裝的模組，他提供了很多個 API 功能讓使用者開發更方便。
 * [Views](https://www.drupal.org/project/views) 直接使用介面來對資料庫撈取資料，只要對 Views 撈資料夠熟悉就能夠解決百分之八十的問題。
 * [Module Filter](https://www.drupal.org/project/module_filter) 這個模組直接將我們的模組列表頁面改寫，將模組群組化，搜尋上更加的方便，也讓模組的資訊更加的詳細。
@@ -97,6 +98,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="block">區塊 (Block)</h2>
+
 * [Bean](https://www.drupal.org/project/bean) (大推)  
 用途：就像我上面敘述提到的，原生的 Block 缺乏權限的控管，以及不是 Entity 的架構，而這個模組正好解決此問題，有詳細的權限控管以及、管理欄位、管理顯示非常好用。  
 備註：Bean 的 Title 欄位，管理顯示隱藏似乎沒有效果，個人解法就是另外在開一個 title 欄位。  
@@ -119,6 +121,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 <h2 id="field">欄位 (Field)</h2>
 ### 欄位類型 (Field type)
+
 * [Entity reference](https://www.drupal.org/project/entityreference)  
 用途：使 Drupal Entity 之間的資料產生關聯，簡單的來說就是資料之間的橋梁透過 Entity reference 可以從 A Type 找到 B type 只要有關聯就一定有辦法撈出資料。  
 支援 Drupal 版本：Drupal7  
@@ -140,6 +143,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 ### 欄位顯示 (Formatter)
+
 * [Field Group](https://www.drupal.org/project/field_group) (大推)  
 用途：可用在管理欄位、管理顯示，可以新增 group 欄位將欄位群組起來，並且顯示為 Fieldset、Tab 又或是可以用 HTML 產生 Wrapper ，很多很多功能。  
 * [Image Link Formatter](https://www.drupal.org/project/image_link_formatter)  
@@ -153,6 +157,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 ### 欄位介面工具 (Widget)
+
 * [Inline Entity Form](https://www.drupal.org/project/inline_entity_form)  
 用途：如果欄位為 Entity Reference 類型，使用 Inline Entity Form 可以直接在當前頁面編輯、新增、複製被 Reference 的 Entity  
 * [Entity connect](https://www.drupal.org/project/entityconnect)  
@@ -163,6 +168,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 ### 功能
+
 * [Display Suite](https://www.drupal.org/project/ds)  
 用途：將欄位的功能更加細分出來，不只管理欄位、管理顯示也可使用，功能非常強大，可以自行新增 code 欄位，也可以新增 view mode 非常好用的模組。  
 * [Field Permissions](https://www.drupal.org/project/field_permissions)  
@@ -172,6 +178,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="views">Views 相關模組</h2>
+
 * [Better Exposed Filters](https://www.drupal.org/project/better_exposed_filters)  
 用途：將原生的 Views Exposed 功能進行強化，有多種型態的選擇，如預設的下拉式選單、連結、單選按鈕等篩選的方式，並且有自動提交、支援 AJAX 等功能。  
 * [Better Jump Menus](https://www.drupal.org/project/jump_menu)  
@@ -188,6 +195,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="slideshow">圖片輪播 (Slideshow)</h2>
+
 * [Slick Carousel](https://www.drupal.org/project/slick) (大推)  
 備註：目前都使用這套，功能強大樣式多樣，擴充性的模組也很多，不管你是同時顯示三個還是五個，後台都可以進行設定。  
 * [Flex Slider](https://www.drupal.org/project/flexslider)  
@@ -200,6 +208,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="sort">排序 (Sort)</h2>
+
 * [DraggableViews](https://www.drupal.org/project/draggableviews)  
 用途：用 views 製作出一個可以拖曳排序的功能。  
 備註：建議新增一個數字欄位讓模組進行排序，在以此欄位當做排序的依據。  
@@ -212,6 +221,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="layout">Layout 相關</h2>
+
 * [Context](https://www.drupal.org/project/context)  
 用途：比起核心的區塊功能更佳的彈性以及強大與大多數的模組整合的非常好  
 * [Panels](https://www.drupal.org/project/panels)  
@@ -223,6 +233,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="menu">選單 (Menu) 類模組</h2>
+
 * [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)  
 用途：將原生上方的 Toolbar 加入 dropdown 的功能，同時支援 RWD 與 [Administration menu](https://www.drupal.org/project/admin_menu) 功能相同。  
 * [Menu Editor](https://www.drupal.org/project/menu_editor)  
@@ -245,6 +256,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="permission">權限 (Permission) 類模組</h2>
+
 * [Filter permissions](https://www.drupal.org/project/filter_perms)  
 用途：將核心的權限頁面加入篩選的功能  
 * [Fast Permissions Administration](https://www.drupal.org/project/fpa)  
@@ -265,6 +277,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="power">功能增強</h2>
+
 * [Administration Views](https://www.drupal.org/project/admin_views)  
 用途：將原生幾個無法修改的 views 進行修改使其功能上更加好用，像是原本的"內容"加上 [VBO](https://www.drupal.org/project/views_bulk_operations) 批次處理的功能  
 * [Back To Top](https://www.drupal.org/project/back_to_top)  
@@ -285,6 +298,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="media">媒體 (Media) 類</h2>
+
 * [Media](https://www.drupal.org/project/media)  
 用途：提供類似檔案總管的功能，讓使用者上傳圖片、檔案、影片等功能，非常強大的一個模組。  
 * [Media CKEditor](https://www.drupal.org/project/media_ckeditor)  
@@ -300,6 +314,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="user">使用者 (User) 相關</h2>
+
 * [profile2](https://www.drupal.org/project/profile2)  
 用途：可以新增與使用者相關連的資料類型，例如履歷表個人檔案。  
 * [Real Name](https://www.drupal.org/project/realname)  
@@ -312,6 +327,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="social">社群相關、分享</h2>
+
 * [AddToAny](https://www.drupal.org/project/addtoany)  
 備註：台灣常用的 Line Wechat 他都有提供，也提供客製化 Icon 的功能目前也是用這款(大推)  
 * [AddThis](https://www.drupal.org/project/addthis)  
@@ -325,6 +341,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 <h2 id="commerce">購物車</h2>
+
 * [Drupal Commerce](https://www.drupal.org/project/commerce)  
 用途： Drupal 的購物車模組擁有基本的產品、購物車功能、結帳、顧客資訊、手續費等功能  
 * [Commerce Addressbook](https://www.drupal.org/project/commerce_addressbook)  
@@ -357,6 +374,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 <h2 id="dev">開發類</h2>
 ### Feature 化模組
+
 * [Feature](https://www.drupal.org/project/features)  
 用途：將網站的資料庫設定匯出打包變成模組，可以直接啟用匯出的模組網站就會有打包起來的功能  
 * [Features Extra](https://www.drupal.org/project/features_extra)  
@@ -367,6 +385,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 用途：可以將網站內的所有 [Variable](https://www.drupal.org/project/variable) 打包起來  
 
 ### SEO
+
 * [Metatag](https://www.drupal.org/project/metatag)  
 用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
 * [Imagecache Token](https://www.drupal.org/project/imagecache_token)  
@@ -382,6 +401,7 @@ Block 為 Drupal 的功能之一，區塊的好處在於可以到處重複使用
 
 
 ### 其他
+
 * [CSS Injector](https://www.drupal.org/project/css_injector)  
 用途：直接在網站上寫 css  
 備註：伺服器上的資料夾權限需要設定才有辦法寫入  
