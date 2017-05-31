@@ -58,16 +58,16 @@ Views 算是 Drupal 相當重要的模組，Views 能做到很多事情，當我
 網站完成之後第一件要做的事情就是分享給自己的親朋好友看，為了讓更多人看到我們的網站，所以有許多與社群連結的模組，像是分享到社群啦，FB留言等模組。
 
 ### [購物車](#commerce)
-購物車相關的模組介紹。
+隨著電子商務的崛起，每個人都想要一個自己的購物車網站，Drupal 當然也可以做購物網站，搭配模組就可以完成所需的商業邏輯，產生報表也是沒問題的。
+
+### [SEO](#seo)
+SEO 這一塊一直是大家討論的重點，Drupal 提供了許多強大的 SEO 模組來加強我們的網站，只要文章的結構良好，再搭配 SEO 的模組，搜尋排名自然就會提升。
 
 ### [開發類](#dev)
 協助開發用的模組，或是不知道該如何分類的模組我都會歸類於此。
 
 #### Feature 化模組
 介紹可以讓網站 Feature 化或是協助 Feature 化的工具。
-
-#### SEO
-關於 SEO 的模組介紹。
 
 #### 其他
 其他開發類別的模組。
@@ -357,21 +357,7 @@ Views 算是 Drupal 相當重要的模組，Views 能做到很多事情，當我
 * [Commerce Fancy Attributes](https://www.drupal.org/project/commerce_fancy_attributes)  
 用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼  
 
-
-<h2 id="dev">開發類</h2>
-
-### Feature 化模組
-
-* [Feature](https://www.drupal.org/project/features)  
-用途：將網站的資料庫設定匯出打包變成模組，可以直接啟用匯出的模組網站就會有打包起來的功能  
-* [Features Extra](https://www.drupal.org/project/features_extra)  
-用途：可以打包原本無法打包的 Nodequeue 以及 Block 還有日期格式  
-* [Diff](https://www.drupal.org/project/diff)  
-用途：網站 Feature 化後，可以用此模組來看哪邊設定被覆寫  
-* [Strongarm](https://www.drupal.org/project/strongarm)  
-用途：可以將網站內的所有 [Variable](https://www.drupal.org/project/variable) 打包起來  
-
-### SEO
+<h2 id="seo">SEO</h2>
 
 * [Metatag](https://www.drupal.org/project/metatag)  
 用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
@@ -385,7 +371,21 @@ Views 算是 Drupal 相當重要的模組，Views 能做到很多事情，當我
 用途：於網站後台直接顯示 GA 的報告  
 * [Pathauto](https://www.drupal.org/project/pathauto)  
 用途：自定意網址路徑的功能  
+* [Tracking Code](https://www.drupal.org/project/tracking_code)  
+用途：埋入追蹤碼的模組。
 
+<h2 id="dev">開發類</h2>
+
+### Feature 化模組
+
+* [Feature](https://www.drupal.org/project/features)  
+用途：將網站的資料庫設定匯出打包變成模組，可以直接啟用匯出的模組網站就會有打包起來的功能  
+* [Features Extra](https://www.drupal.org/project/features_extra)  
+用途：可以打包原本無法打包的 Nodequeue 以及 Block 還有日期格式  
+* [Diff](https://www.drupal.org/project/diff)  
+用途：網站 Feature 化後，可以用此模組來看哪邊設定被覆寫  
+* [Strongarm](https://www.drupal.org/project/strongarm)  
+用途：可以將網站內的所有 [Variable](https://www.drupal.org/project/variable) 打包起來  
 
 ### 其他
 
@@ -405,5 +405,3 @@ Views 算是 Drupal 相當重要的模組，Views 能做到很多事情，當我
 用途：處發事件之後執行客製的動作，功能靈活可是設定稍為複雜  
 * [Variable](https://www.drupal.org/project/variable)  
 用途：提供了一個介面來管理網站的 Variable，也提供了 API 讓我們撰寫模組產生 Variable。  
-* [Tracking Code](https://www.drupal.org/project/tracking_code)  
-用途：埋入追蹤碼的模組。  
