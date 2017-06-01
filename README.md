@@ -60,14 +60,14 @@ Views 算是 Drupal 相當重要的模組，Views 能做到很多事情，當我
 ### [購物車](#commerce)
 隨著電子商務的崛起，每個人都想要一個自己的購物車網站，Drupal 當然也可以做購物網站，搭配模組就可以完成所需的商業邏輯，產生報表也是沒問題的。
 
-### [SEO](#seo)
+### [SEO](#search)
 SEO 這一塊一直是大家討論的重點，Drupal 提供了許多強大的 SEO 模組來加強我們的網站，只要文章的結構良好，再搭配 SEO 的模組，搜尋排名自然就會提升。
 
 ### [開發類](#dev)
-協助開發用的模組，或是不知道該如何分類的模組我都會歸類於此。
+幫助工程師開發的模組，放在最後是因為使用的機率不高。
 
 #### Feature 化模組
-介紹可以讓網站 Feature 化或是協助 Feature 化的工具。
+可以讓網站 Feature 化或是協助 Feature 化的工具。
 
 #### 其他
 其他開發類別的模組。
@@ -357,7 +357,7 @@ SEO 這一塊一直是大家討論的重點，Drupal 提供了許多強大的 SE
 * [Commerce Fancy Attributes](https://www.drupal.org/project/commerce_fancy_attributes)  
 用途：如果模組有顏色的屬性可以使用這個模組，將顏色顯示出來，可是必須要自己填入色碼  
 
-<h2 id="seo">SEO</h2>
+<h2 id="search">SEO</h2>
 
 * [Metatag](https://www.drupal.org/project/metatag)  
 用途：用於設定 SEO 的模組，還有許多擴展性的模組功能非常強大  
